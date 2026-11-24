@@ -257,12 +257,7 @@
     .offer-list { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 12px; margin: 0 0 22px; padding: 0; list-style: none; position: relative; z-index: 1; }
     .offer-list li { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; }
     .offer-list li::before { content: "✓"; width: 21px; height: 21px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; color: var(--ink); background: var(--acid); font-size: 10px; }
-    .offer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; position: relative; z-index: 1; }
-    .offer-price { display: grid; grid-template-columns: auto auto; align-items: end; column-gap: 4px; line-height: 1; }
-    .offer-price small { grid-column: 1 / -1; margin-bottom: 2px; color: var(--muted); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-    .offer-price strong { font-size: 2.75rem; letter-spacing: -.08em; }
-    .offer-price strong sup { margin-right: 3px; font-size: .34em; vertical-align: top; letter-spacing: 0; }
-    .offer-price span { padding-bottom: 5px; color: var(--muted); font-size: 11px; font-weight: 750; }
+    .offer-bottom { display: flex; align-items: center; justify-content: flex-start; gap: 16px; position: relative; z-index: 1; }
     .offer-button { min-height: 48px; padding-inline: 17px; color: var(--paper); background: var(--ink); border-color: var(--ink); font-size: 13px; }
     .offer-button::after { content: "↗"; font-size: 17px; }
     .offer-secondary { display: inline-flex; margin: 15px 0 0 7px; color: var(--muted); font-size: 12px; font-weight: 750; }
@@ -500,8 +495,7 @@
       .hero-stage { margin-top: 50px; }
       .offer-card { padding: 21px; }
       .offer-list { grid-template-columns: 1fr; }
-      .offer-bottom { align-items: flex-end; }
-      .offer-price strong { font-size: 2.4rem; }
+      .offer-bottom { align-items: flex-start; }
       .offer-button { max-width: 190px; padding-inline: 14px; text-align: center; }
       .browser { min-height: 350px; padding: 9px; transform: none; }
       .browser-screen { min-height: 290px; }
@@ -574,20 +568,19 @@
           <div class="hero-copy reveal">
             <div class="offer-card">
               <div class="offer-top">
-                <span class="offer-badge">Oferta completa</span>
-                <span class="offer-payment">Mensal no boleto</span>
+                <span class="offer-badge">Solução completa</span>
+                <span class="offer-payment">Site + gestão</span>
               </div>
-              <h2>Seu site no ar. Seu negócio organizado.</h2>
-              <p>Uma solução completa para começar com presença profissional e gestão simples desde o primeiro dia.</p>
+              <h2>Presença que atrai. Gestão que organiza.</h2>
+              <p>Unimos um site feito para a sua marca ao NextActa, para transformar visibilidade em uma operação mais profissional desde o primeiro dia.</p>
               <ul class="offer-list">
-                <li>Site personalizado</li>
-                <li>Hospedagem inclusa</li>
-                <li>15 GB de armazenamento</li>
-                <li>Sistema NextActa</li>
+                <li>Site único para sua marca</li>
+                <li>Hospedagem e domínio</li>
+                <li>15 GB + manutenção</li>
+                <li>NextActa para sua operação</li>
               </ul>
               <div class="offer-bottom">
-                <div class="offer-price"><small>tudo por</small><strong><sup>R$</sup>99</strong><span>/mês</span></div>
-                <a class="button offer-button" href="https://wa.me/554197652901?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20R%24%2099%20mensais%20com%20site%20personalizado%2C%20hospedagem%2C%2015%20GB%20e%20NextActa." target="_blank" rel="noopener noreferrer">Quero essa solução</a>
+                <a class="button offer-button" href="#plano">Descobrir tudo o que inclui</a>
               </div>
             </div>
             <a class="offer-secondary" href="#projetos">Ver projetos já entregues ↓</a>
@@ -680,11 +673,13 @@
             <h3>Incluído na mensalidade</h3>
             <div class="included-grid">
               <div class="included-item"><span class="included-icon">01</span><strong>Site personalizado</strong><span>Projeto institucional alinhado à identidade e ao segmento, com até 5 páginas ou seções.</span></div>
-              <div class="included-item"><span class="included-icon">02</span><strong>Hospedagem + 15 GB</strong><span>Infraestrutura para manter o site e o sistema disponíveis durante a vigência do plano.</span></div>
-              <div class="included-item"><span class="included-icon">03</span><strong>Domínio e SSL</strong><span>Um domínio convencional, renovação ordinária e certificado HTTPS incluídos.</span></div>
-              <div class="included-item"><span class="included-icon">04</span><strong>Manutenção técnica</strong><span>Correções, atualizações de segurança e pequenas alterações de conteúdo.</span></div>
-              <div class="included-item"><span class="included-icon">05</span><strong>Suporte pelo WhatsApp</strong><span>Atendimento para dúvidas e problemas de utilização em horário comercial.</span></div>
-              <div class="included-item"><span class="included-icon">06</span><strong>Backups periódicos</strong><span>Rotina de contingência com retenção de até 7 dias, conforme disponibilidade técnica.</span></div>
+              <div class="included-item"><span class="included-icon">02</span><strong>NextActa incluído</strong><span>Dashboard, contatos, leads, clientes, agenda, serviços e financeiro básico reunidos em um só lugar.</span></div>
+              <div class="included-item"><span class="included-icon">03</span><strong>Equipe e permissões</strong><span>Até 5 acessos individuais para organizar profissionais, responsabilidades e informações do negócio.</span></div>
+              <div class="included-item"><span class="included-icon">04</span><strong>Hospedagem + 15 GB</strong><span>Infraestrutura para manter o site e o sistema disponíveis durante a vigência do plano.</span></div>
+              <div class="included-item"><span class="included-icon">05</span><strong>Domínio e SSL</strong><span>Um domínio convencional, renovação ordinária e certificado HTTPS incluídos.</span></div>
+              <div class="included-item"><span class="included-icon">06</span><strong>Manutenção técnica</strong><span>Correções, atualizações de segurança e pequenas alterações de conteúdo.</span></div>
+              <div class="included-item"><span class="included-icon">07</span><strong>Suporte pelo WhatsApp</strong><span>Atendimento para dúvidas e problemas de utilização em horário comercial.</span></div>
+              <div class="included-item"><span class="included-icon">08</span><strong>Backups periódicos</strong><span>Rotina de contingência com retenção de até 7 dias, conforme disponibilidade técnica.</span></div>
             </div>
           </div>
         </div>
